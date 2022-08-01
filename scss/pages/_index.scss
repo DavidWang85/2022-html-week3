@@ -1,0 +1,194 @@
+.header{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        display: block;
+        padding-right: 32px;
+        padding-left: 32px;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    @include mb {
+        display: none;
+    }
+}
+.menu-icon {
+    display: none;
+    @include mb {
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+    }
+}
+.logo{
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+//main
+.main{
+    padding: 40px;
+    text-align: center;
+    height: 1883px;
+}
+//footer
+.footer {
+    padding-top: 48px;
+    padding-bottom: 40px;
+    @include mb{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+.footer-content{
+    @include mb{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: start;
+        border-bottom: 1px solid $color-light;
+    }
+}
+// .contract-rwd{
+//     display: none;
+//     padding-bottom: 24px;
+//     border-bottom: 1px solid $color-light;
+//     @include mb {
+//         display: block;
+//         margin-bottom: 16px;
+//     }
+// }
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    &-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: -16px;
+        margin-left: -16px;
+        @include mb{
+            margin-right: -8px;
+            margin-left: -8px;
+        }
+    }
+}
+.link-item{
+    padding-right: 16px;
+    padding-left: 16px;
+    @include mb{
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}
+.link-icon{
+    width: 48px;
+    height: 48px;
+    &:hover{
+        opacity: 0.8;
+    }
+    @include pad{
+        width: 40px;
+        height: 40px;
+    }
+    @include mb{
+        width: 24px;
+        height: 24px;
+    }
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -24px;
+    margin-right: -24px;
+    &-item{
+        padding-left: 24px;
+        padding-right: 24px;
+        display: block;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    @include mb{
+        display: none;
+    }
+}
+.contract-list{
+    padding-bottom: 24px;
+    border-bottom: 1px solid $color-light;
+    margin-bottom: 32px;
+    @include mb{
+        padding-bottom: 0px;
+        border-bottom: none;
+    }
+    a, span{
+        @include mb {
+            font-size: 16px;
+        }
+    }
+    
+}
+.contract-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    &:hover{
+        opacity: 0.8;
+    }
+    span{
+        margin-right: 16px;
+        @include mb{
+            margin-right: 8px;
+        }
+    }
+}
+
+.low{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mb{
+        margin-top: 16px;
+        flex-direction: column;
+        justify-self: start;
+        align-items: start;
+    }
+}
+.privacy{
+    display: flex;
+    justify-content: space-between;
+    margin-right: -24px;
+    margin-left: -24px;
+    @include mb{
+        margin-right: 0;
+        margin-left: 0;
+        flex-direction: column;
+        justify-content: start;
+    }
+    &-item{
+        margin-right: 24px;
+        margin-left: 24px;
+        @include mb{
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}

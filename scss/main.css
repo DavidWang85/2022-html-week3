@@ -1,0 +1,554 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, "Noto Serif TC", "Roboto","Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif, serif;
+}
+
+.text-noto {
+  font-family: "Noto Serif TC";
+}
+
+.text-roboto {
+  font-family: "Roboto";
+}
+
+.front-light {
+  font-weight: 300;
+}
+
+.front-regular {
+  font-weight: 400;
+}
+
+.front-medium {
+  font-weight: 500;
+}
+
+.front-bold {
+  font-weight: 700;
+}
+
+.front-black {
+  font-weight: 900;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.lh-md {
+  line-height: 1.5;
+}
+
+.fz-sm {
+  font-size: 16px;
+}
+
+.fz-md {
+  font-size: 20px;
+}
+
+.fz-l {
+  font-size: 24px;
+}
+
+.fz-xl {
+  font-size: 30px;
+}
+
+.fz-2xl {
+  font-size: 36px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1320px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 373px;
+  }
+}
+
+.bg-primary-0601 {
+  background: #AA0601;
+}
+
+.text-light {
+  color: #FFFFFF;
+}
+
+.text-primary-0601 {
+  color: #AA0601;
+}
+
+.d-block {
+  display: block;
+}
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-item {
+  display: block;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.menu-item:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 375px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .menu-icon {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+  }
+}
+
+.logo {
+  display: block;
+  width: 80px;
+  height: 50px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.main {
+  padding: 40px;
+  text-align: center;
+  height: 1883px;
+}
+
+.footer {
+  padding-top: 48px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 375px) {
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    border-bottom: 1px solid #FFFFFF;
+  }
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.links-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: -16px;
+  margin-left: -16px;
+}
+
+@media (max-width: 375px) {
+  .links-nav {
+    margin-right: -8px;
+    margin-left: -8px;
+  }
+}
+
+.link-item {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+@media (max-width: 375px) {
+  .link-item {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}
+
+.link-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.link-icon:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .link-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .link-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+.footer-menu-item {
+  padding-left: 24px;
+  padding-right: 24px;
+  display: block;
+}
+
+.footer-menu-item:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 375px) {
+  .footer-menu {
+    display: none;
+  }
+}
+
+.contract-list {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 375px) {
+  .contract-list {
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .contract-list a, .contract-list span {
+    font-size: 16px;
+  }
+}
+
+.contract-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+
+.contract-item:hover {
+  opacity: 0.8;
+}
+
+.contract-item span {
+  margin-right: 16px;
+}
+
+@media (max-width: 375px) {
+  .contract-item span {
+    margin-right: 8px;
+  }
+}
+
+.low {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 375px) {
+  .low {
+    margin-top: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+.privacy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: -24px;
+  margin-left: -24px;
+}
+
+@media (max-width: 375px) {
+  .privacy {
+    margin-right: 0;
+    margin-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.privacy-item {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+@media (max-width: 375px) {
+  .privacy-item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
